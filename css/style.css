@@ -1,0 +1,266 @@
+*{
+  box-sizing: border-box;
+  font-family: arial;
+  }
+
+/**Main Section**/
+body{
+  padding: 1%;
+}
+.hidden, .subHidden{
+  display: none;
+}
+
+.mainArticles{
+  height: 700px;
+  width: 65.5%;
+  float: left;
+}
+.grapeBox, .middleArticle{
+  height: 300px;
+  width: 100%;
+  float: left;
+  padding-left: 0px;
+}
+.grapeBox section{
+  height: 295px;
+  width: 35%;
+  background-color: #3c292c;
+  float: left;
+}
+.grapeBox img{
+  height: 295px;
+  float: left;
+  width: 30%;
+}
+.barney h2, .barney h5, .blob, .lannister, h1{
+  color: white;
+}
+.barney h2{
+  font-size: 1.9rem;
+}
+.blob p{
+margin-left: 23%;
+margin-right: 16%;
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+}
+
+.blob ul{
+  padding-left: 1%;
+}
+.blob li{
+  list-style: none;
+  padding-top: 4%;
+  font-weight: bold;
+}
+.barney span{
+  color: yellow;
+}
+.barney{
+  padding: 1% 4% 1% 4%;
+  text-align: center;
+  font-weight: bolder;
+}
+.ironman, .miniArticles, #invisible{
+  height: 275px;
+  float: left;
+}
+.ironman, #invisible{
+  width: 30%;
+}
+.miniArticles{
+  width: 40%;
+
+}
+.ironman img{
+  width: 85%;
+  height: 138px;
+  margin-top: 2px;
+}
+.ironman h3{
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 2% 16% 0% 8%;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+.lannister{
+ background-color: #670132;
+ margin-top: 1%;
+}
+.lannister h4{
+  margin-top: -20px;
+  padding-top: 20px;
+}
+.tyrion, .lannister{
+  border: 1px solid black;
+  font-size: 1.09rem;
+  height: 138px;
+  padding: 4%;
+}
+.tyrion h4, .lannister h4{
+  font-size: 1.5rem;
+  margin: -2%;
+}
+.ad{
+  width: 100%;
+}
+/**Side Section**/
+.sideArticles{
+  height: 700px;
+  width: 32.5%;
+  float: left;
+}
+.header{
+  background-color: #670132;
+  height: 60px;
+  width: 100%;
+  float: left;
+  margin-left: 20px;
+}
+h1{
+  font-weight: bold;
+  font-size: 60px;
+  margin-top: 1px;
+}
+.subBar{
+  background-color: black;
+  height: 40px;
+  width: 100%;
+  float: left;
+  color: white;
+  margin-left: 20px;
+}
+.subBar span{
+  color: white;
+  float: left;
+}
+.subBar span+span{
+  color: yellow;
+  float: right;
+}
+.subBar span, .subBar span+span{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2%;
+}
+.sideArticles li{
+  list-style: none;
+  font-size: 20px;
+  padding: 3px 16px 11px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.sideArticles li span{
+  color: grey;
+}
+
+
+@media only screen and (max-width: 500px) {
+#begone, #invisible, .sideArticles, .blob, .ad, .header{
+  display: none;
+}
+.hidden, .subHidden{
+  display: block;
+  background-color: #670132;
+  height: 60px;
+  width: 50%;
+  float: left;
+}
+.subHidden p{
+  font-weight: bold;
+  color: white;
+  margin-left: 64%;
+  padding: 2%;
+}
+
+.mainArticles{
+  height: 700px;
+  width: 100%;
+  float: left;
+}
+.grapeBox section{
+height: 295px;
+width: 100%;
+background-color: #3c292c;
+float: left;
+}
+.ironman img{
+  width: 85%;
+  height: 200px;
+  margin-top: 2px;
+}
+
+.ironman, .miniArticles{
+  width: 100%;
+  float: none;
+}
+  .tyrion h4, .lannister h4{
+  font-size: 1.1rem;
+}
+}
+@media (min-width: 501px) and (max-width: 900px){
+  .hidden, .subHidden{
+    display: block;
+    background-color: #670132;
+    height: 60px;
+    width: 50%;
+    float: left;
+  }
+.subHidden p{
+  font-weight: bold;
+  color: white;
+  margin-left: 64%;
+  padding: 3%;
+}
+.blob, #invisible, .sideArticles, .ad, .header{
+    display: none;
+  }
+  .mainArticles{
+    height: 700px;
+    width: 100%;
+    float: left;
+  }
+.grapeBox{
+  height: 295px;
+  width: 100%;
+  background-color: #3c292c;
+  float: left;
+  }
+  .ironman, .miniArticles{
+    width: 50%;
+  }
+  .grapeBox img{
+    height: 295px;
+    float: left;
+    width: 39%;
+  }
+  .grapeBox section{
+    height: 295px;
+    width: 61%;
+    background-color: #3c292c;
+    float: left;
+  }
+}
+@media (min-width: 901px) and (max-width: 1030px){
+ .byebye{
+    display: none;
+}
+.tyrion h4, .lannister h4{
+  font-size: 1.1rem;
+}
+.ironman h3{
+font-weight: bold;
+width: 85%;
+font-size: 1.2rem;
+padding: 0% 14% 0% 8%;
+margin-top: 0%;
+}
+.barney h2{
+  font-size: 1.5rem;
+}
